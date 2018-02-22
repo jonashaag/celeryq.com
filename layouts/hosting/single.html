@@ -1,0 +1,58 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <p>
+    When your Python Web application grows larger, at some point you will have to incorporate background job processing.
+    This usually means setting up additional infrastructure: A task queue like Celery, backed by a queue server like RabbitMQ, result storage, additional monitoring, etc.
+  </p>
+  <p>
+    If you don't want to waste your time and money with these troublesome things, we've got you covered!
+    We run all of these things for you so you can focus on building your product, not building infrastructure.
+  </p>
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Baseline" src="{{ "/img/cloud.svg" | relURL }}" style="height: 70px">
+        </figure>
+        <h3>Fully managed Celery</h3>
+        <p>Run your background jobs on our fully managed, high-performance Celery cluster. No infrastructure setup, no server configuration, no monitoring. Get started in a matter of seconds with our zero-configuration Celery Hosting.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Typography" src="{{ "/img/chart-line.svg" | relURL }}" style="height: 70px">
+        </figure>
+        <h3>Infinitely scalable</h3>
+        <p>Maximum concurrency with unlimited number of parallel backgrounds jobs. The number of Celery workers running for your application is scaled automatically according to current demand.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" src="{{ "/img/heart.svg" | relURL }}" style="height: 70px">
+        </figure>
+        <h3>Your favorite framework</h3>
+        <p>Celery Cloud Hosting works with any Python application, and has special support for popular Web frameworks like Django and Flask.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-subscribe">
+    <h4>Request Beta Access</h4>
+    <p>Celery Cloud Hosting is currently in private Beta. Request access to our limited free Beta program.</p>
+    <form method="post" class="form" action="https://celeryq.campayn.com/contacts/signup_form_add_contact/73122">
+      <input type="hidden" name="formId" value="72344">
+      <div class="form-item">
+        <div class="append">
+          <input type="email" id="emailAddress" name="email" placeholder="jane@example.com">
+          <input class="button primary" type="submit" value="Request Beta Access">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
