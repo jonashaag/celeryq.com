@@ -31,7 +31,7 @@ server {
 
 If you don't use our Docker image (see below), you'll have to install the Ubuntu packages `nginx` and `uwsgi-plugin-python3`.
 
-For a more secure configuration, please see [the GitHub repository for this tutorial](https://github.com/jonashaag/django-deployment).
+For a more secure configuration, please see [the GitHub repository for this tutorial](https://github.com/jonashaag/django-nginx-uwsgi-celery-deployment).
 
 ## uWSGI configuration
 
@@ -50,7 +50,7 @@ uwsgi \
   --wsgi demoproject.wsgi:application
 ```
 
-In the [Docker image](https://github.com/jonashaag/django-deployment/) the `uwsgi` command is used as the main `CWD`. If you're using supervisord, you can wire up the `uwsgi` command as the process to watch.
+In the [Docker image](https://github.com/jonashaag/django-nginx-uwsgi-celery-deployment) the `uwsgi` command is used as the main `CWD`. If you're using supervisord, you can wire up the `uwsgi` command as the process to watch.
 
 ## Celery deployment
 
