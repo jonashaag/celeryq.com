@@ -85,3 +85,7 @@ This starts a web interface on port 5555. Of course you should make sure that yo
 Note that Flower won't work with the development-mode Django SQL database based Celery broker that we use in our setup. You can use a [free Cloud-hosted Redis database](https://redislabs.com/) as message broker for testing flower on your local machine.
 
 See the [Celery monitoring documentation](http://docs.celeryproject.org/en/latest/userguide/monitoring.html#flower-real-time-celery-web-monitor) for details on Celery monitoring, and the [nginx documentation](http://nginx.org/en/docs/) for details on Basic Auth.
+
+## Logging with Sentry
+
+Getting logging to work properly with Django, Celery and Sentry can be tricky. See our [post on logging with Celery + Sentry]({{< relref "blog/celery-sentry-logging" >}}) for a configuration that works.
