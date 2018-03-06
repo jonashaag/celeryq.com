@@ -4,6 +4,8 @@ title = "Celery Task Queue for Python"
 theme = "kube"
 description = "Kube is a professional  and a responsive Hugo theme for developers and designers that offers a documentation section mixed with a landing page and a blog"
 Paginate = 10
+googleAnalytics = "UA-115201630-1"
+
 [Params]
   RSSLink = "/index.xml"
   author = "newpixcom" # add your company name
@@ -12,10 +14,10 @@ Paginate = 10
   email = "myemail@myaddress.xxx"
 
 [[menu.main]]
-    name = "Home"
-    weight = 1
-    url = "/"
+  name = "Home"
+  weight = 1
+  url = "/"
 [[menu.main]]
-    name = "Celery Hosting (beta)"
-    weight = 2
-    url = "/hosting/"
+  name = "Celery Hosting (beta)"
+  weight = 2
+  url = "/hosting/"
